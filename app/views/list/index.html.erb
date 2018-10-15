@@ -1,0 +1,19 @@
+<% @users.reverse.each do |user| %>
+<tbody>
+<tr>
+
+    <td><%= user.email %></td>
+    <td>
+        <% if user.admin == true%>
+          <p>role: admin </p>
+        <% else %>
+          <p>role :visita</p>
+        <% end %>
+    </td>
+
+
+
+</tr>
+</tbody>
+
+<% end %>
